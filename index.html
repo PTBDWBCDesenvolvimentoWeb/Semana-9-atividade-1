@@ -3,61 +3,96 @@
     <head>
         <meta charset="UTF-8" /> <!-- configura a codificação de caracteres do navegador para o UTF-8-->
         <link rel="icon" href="images/favicon.ico" type="image/x-icon" />  <!-- Adiciona o ícone de aba de navegador-->
-        <title> HOME-dwba4-semana-06-pt3033317</title> <!-- Adiciona o título na aba do navegador-->
+        <title> HOME - IFSP-PTB - DWBA4 </title> <!-- Adiciona o título na aba do navegador-->
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="slideshow.css">
     </head>
 
     <body>
         <header id="cabecalho"> <!-- Indica o cabeçalho do nosso documento-->
             <nav> 
-                <iframe src="menu.html" frameborder="0" height="165px" style="width: 100%;" scrolling="no"></iframe><!--Traz o html menu como parte da página-->
+                <iframe src="menu.html" frameborder="0" height="250px" style="width: 100%" scrolling="no"></iframe><!--Traz o html menu como parte da página-->
             </nav>
         </header>
 
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 4</div>
+                <img src="./images/A.png" style="width:100%">
+                <div class="text">Caption Text</div>
+            </div>
+                
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 4</div>
+                <img src="./images/B.jpg" style="width:100%">
+                <div class="text">Caption Two</div>
+            </div>
+                
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 4</div>
+                <img src="./images/C.jpg" style="width:100%">
+                <div class="text">Caption Three</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 4</div>
+                    <div class="evento2">
+                        <h2>Conheça os desafios de inovação</h2>
+                        
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/5g5LQe3m8Po?si=5ej0IQZrsmUADQH1" 
+                        title="Vídeo do Youtube" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+                        gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        
+                    </div>
+                <div class="text">Caption Four</div>
+            </div>
+                
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+                
+            </div>
+            <br>
+                
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span> 
+                <span class="dot" onclick="currentSlide(2)"></span> 
+                <span class="dot" onclick="currentSlide(3)"></span> 
+                <span class="dot" onclick="currentSlide(4)"></span> 
+            </div>
+        </div>
+
         <main class="main-home"> <!-- indica que é o conteúdo principal dessa página -->
-        
-<div class="slideshow-container">
-
-  <!-- Full-width images with number and caption text -->
-  <div class="mySlides fade">
-    <div class="numbertext">1 / 4</div>
-    <img src="https://github.com/DWBA4/dwba4_semana_imagens/blob/master/A.png?raw=true" style="width:100%">
-    <div class="text">Caption Text</div>
-  </div>
-
-  <div class="mySlides fade">
-    <div class="numbertext">2 / 4</div>
-    <img src="https://github.com/DWBA4/dwba4_semana_imagens/blob/master/B.jpg?raw=true" style="width:100%">
-    <div class="text">Caption Two</div>
-  </div>
-
-  <div class="mySlides fade">
-    <div class="numbertext">3 / 4</div>
-    <img src="https://github.com/DWBA4/dwba4_semana_imagens/blob/master/C.jpg?raw=true" style="width:100%">
-    <div class="text">Caption Three</div>
-  </div>
-
-  <div class="mySlides fade">
-    <div class="numbertext">4 / 4</div>
-     <iframe width="560" height="315" src="https://www.youtube.com/embed/5g5LQe3m8Po?si=5ej0IQZrsmUADQH1" 
-                title="Vídeo do Youtube" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
-                gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="width:100%"> </iframe>
-    <div class="text">Caption Three</div>
-  </div>
-
-  <!-- Next and previous buttons -->
-  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-  <a class="next" onclick="plusSlides(1)">&#10095;</a>
-</div>
-<br>
-
-<!-- The dots/circles -->
-<div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span>
-  <span class="dot" onclick="currentSlide(2)"></span>
-  <span class="dot" onclick="currentSlide(3)"></span>
-</div>
+        <!-- Acontece no IFSP -->
+            <aside>
+                <div class="container">
+                    <div>
+                        <figure>
+                            <img src="images/eleicoes.jpg" width="50%">
+                            <figcaption class="legenda"><strong>IFSP: informe-se sobre as eleições do dia 13 de outubro</strong><br>Todos os alunos e servidores podem votar; acesse aqui a cabine de votação online do seu câmpus</figcaption>
+                        </figure>
+                    </div>
+                    <div>
+                        <figure>
+                            <img src="images/snct.jpg" width="50%">
+                            <figcaption class="legenda"><strong>IFSP: SNCT reúne atividades entre 19 e 24 de outubro</strong><br>Programação reunirá iniciativas para aproximar pesquisadores e atividades culturais</figcaption>
+                        </figure>
+                    </div>
+                    <div>
+                        <figure>
+                            <img src="images/residencia.png" width="50%">
+                            <figcaption class="legenda"><strong>IFSP oferece bolsa aos voluntários da Residência Pedagógica</strong><br>Bolsa de R$ 400,00 será paga pelo período de três meses</figcaption>
+                        </figure>
+                    </div>
+                    <div>
+                        <figure>
+                            <img src="images/maratona.jpeg" width="50%">
+                            <figcaption class="legenda"><strong>Inscrições abertas para a III Maratona InterIF</strong><br>Maratona de programação do IFSP será realizada online, no dia 31 de outubro; inscrições até 26 de outubro</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </aside>
+        </main>
 
         <!-- Rodapé -->
         <footer>
@@ -66,5 +101,6 @@
                 <object width="100%" data="rodape.html"></object>
             </nav>          
         </footer>
+        <script type="text/javascript" src="./controller.js" defer></script>
     </body>
 </html>
