@@ -2,9 +2,15 @@
     background-color: green;
 }
 
+.logo{
+    width: 30%;
+    height: 20%;
+}
+
 .menu{
     overflow: hidden;
     background-color: #333;
+    width: 100%;
 }
 
 .menu a{
@@ -81,18 +87,6 @@
     text-align: center;        
 }
 
-.sejaRaro {
-    border-radius: 50%;
-    object-fit: cover; 
-}
-
-figcaption {
-    border: 1px dotted black;     /* borda pontilhada */
-    display: inline-block;
-    width: 100%;
-    margin-bottom: 10px;
-}
-
 #email, #celular, #perfilGithub, #mensagem, #telefone {
     width: 98%;
     padding: 10px;
@@ -135,4 +129,18 @@ input, textarea, #assunto {
     margin-top: 10px;
     padding: 20px;
     background-color: rgb(236, 236, 236);
+}
+
+.container {
+    display:grid;
+    grid-template-columns: repeat(2, minmax(5%, 1fr));
+}
+
+.container > div {
+    text-align: center;
+}
+
+.legenda {
+    margin-top: 3%;
+    font-size: 12px;
 }
